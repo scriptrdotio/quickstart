@@ -9,7 +9,25 @@ var deviceManager = require("/quickstart/entities/devicemanager");
 // read data from request rawBody or body property
 var data = request.body ? request.body : request.rawBody;
 
-log.info("/quickstart/api/subscriber received the following payload \n" + JSON.stringify(data));
+if(data == null){
+    if(request.body != null){
+        data = request.body;
+    }else if(request.parameters.body){
+        data = request.parameters.body;
+    } else {
+        data = request.parameters;
+    }
+    if(typeof data == 'string'){
+        try{
+            data = JSON.parse(data);   
+        }catch(e){
+            return "INVALID OR MISSING PARAMETER";
+        }
+    } 
+}
+
+
+log.info("/quickstart/api/subscriber received the following payload \n" + JSON.stringify(request));
 
 try {
     if(data["formtype"] == "acceleration") {
