@@ -156,8 +156,8 @@
                           <div  style="height: calc(100% - 30px)" > <scriptr-speedometer
 										transport='wss'
 										boxLabel='Average Speed'
-										data='20'
-										msg-tag='speedometer_average_1366242365'
+										data='10'
+										msg-tag='speedometer_average_2213161139'
 										min-value='0'
 										max-value='10000'
 										tick-space-min-val='200'
@@ -173,7 +173,7 @@
 										default-fonts='Source Sans Pro'
 										http-method='GET'
 										api='quickstart/api/getLiveAverageSpeed'
-										api-params='{"deviceId": "1366242365"}'
+										api-params='{"deviceId": "2213161139"}'
 										gauge-units='meter/hr'
                            ></scriptr-speedometer> </div>
                         </div>
@@ -186,13 +186,13 @@
                           <div  style="height: calc(100% - 30px)" > <scriptr-chart
 										type='line'
 										boxLabel='Line Chart'
-										xkey='y'
-										ykeys='["a", "b"]'
+										xkey='time'
+										ykeys='["speed"]'
 										labels='["Speed"]'
 										colors='["#FCC717","#38B9D6"]'
 										transport='wss'
-										msg-tag='linechart_1366242365'
-										data='[{"y": 2006, "a": 2, "b": 3 }, { "y": 2007, "a": 82, "b": 68 }, { "y": 2009, "a": 70, "b": 99 }, { "y":2010, "a": 30, "b": 64 }, { "y": 2011, "a": 72, "b":100 }, { "y": 2012, "a": 81, "b": 81 }, { "y": 2013,"a": 52, "b": 39 } ]'
+										msg-tag='linechart_2213161139'
+										data=''
 										grid-text-family='Source Sans Pro'
 										line-width='3'
 										point-size='4'
@@ -230,7 +230,7 @@
                           <div  style="height: calc(100% - 30px)" > <scriptr-speedometer
 										transport='wss'
 										boxLabel='Speed'
-										data='45'
+										data='10'
 										msg-tag='speedometer_speed_2213161139'
 										min-value='0'
 										max-value='10000'
