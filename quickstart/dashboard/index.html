@@ -114,7 +114,7 @@
                           <div  style="height: 30px;" tooltip-placement="bottom" uib-tooltip="Acceleration" class="box-label">Acceleration</div>
                           <div  style="height: calc(100% - 30px)" > <scriptr-accelerometer
 										transport='wss'
-										msg-tag='acceleration_1366242365'
+										msg-tag='acceleration_2213161139'
 										boxLabel='Acceleration'
 										http-method='GET'
                            ></scriptr-accelerometer> </div>
@@ -186,8 +186,8 @@
                           <div  style="height: calc(100% - 30px)" > <scriptr-chart
 										type='line'
 										boxLabel='Line Chart'
-										xkey='timestamp'
-										ykeys='["speed"]'
+										xkey='y'
+										ykeys='["a", "b"]'
 										labels='["Speed"]'
 										colors='["#FCC717","#38B9D6"]'
 										transport='wss'
@@ -231,7 +231,7 @@
 										transport='wss'
 										boxLabel='Speed'
 										data='45'
-										msg-tag='speedometer_speed_1366242365'
+										msg-tag='speedometer_speed_2213161139'
 										min-value='0'
 										max-value='10000'
 										tick-space-min-val='200'
@@ -247,7 +247,7 @@
 										default-fonts='Source Sans Pro'
 										http-method='GET'
 										api='quickstart/api/getLiveSpeed'
-										api-params='{"deviceId":"1366242365"}'
+										api-params='{"deviceId":"2213161139"}'
                            ></scriptr-speedometer> </div>
                         </div>
                     </div>
