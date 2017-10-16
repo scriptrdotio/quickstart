@@ -11,13 +11,13 @@
     <script src="//cdn.rawgit.com/gdi2290/angular-websocket/v1.0.9/angular-websocket.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fingerprintjs/0.5.3/fingerprint.min.js"></script>
-    <script src="/UIComponents/wsProvider.js"></script>
+    <script src="/quickstart/wsProvider.js"></script>
     <script src="//use.fontawesome.com/3d61d6959e.js"></script>
     
     <script>
         var myApp = angular.module('myApp', ["WsClient"]);
         myApp.config(["wsClientProvider",function (wsClientProvider) {
-            wsClientProvider.setToken("VDFBMkMzMThDRQ==");
+            wsClientProvider.setToken("VzUwRURDNDQ2MQ==");
             wsClientProvider.setPublishChannel("requestChannel");
             wsClientProvider.setSubscribeChannel("responseChannel");
         }]);
