@@ -42,7 +42,7 @@ This app assumes the user mobile phone as his device.
 ------------
 - click on settings icon of the line chart widget.
 - update
-  - message tag field with {linechart_&lt;value of device id you got on your mobile&gt;"}
+  - message tag field with {linechart_speed_&lt;value of device id you got on your mobile&gt;"}
   - save your new line chart config for speed over time charting.
 ------------
   - Go To The Quickstart/Api/Subscriber And Subscribe It To The Requestchannel.
