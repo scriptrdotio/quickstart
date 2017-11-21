@@ -37,7 +37,7 @@ function processLocation(data) {
     return data.deviceId;
 }
 function publishAcceleration(data) {
-    log.info(JSON.stringify(data))
+    log.info("publishing Acceleration: "+JSON.stringify(data))
     if(data["formtype"] == "acceleration") {
         var res = {"x": data.accelerationX, "y": data.accelerationY, "z": data.accelerationZ};
         var accelerometerId = data["formtype"]+"_"+data.deviceId
@@ -73,6 +73,7 @@ function publishPosition(deviceId) {
         var deviceDataPoints =  aggregates.getDataPoints(data.deviceId);
         var lineChartId = "linechart_speed_"+ data.deviceId;
         //publish new registered speed point
+        log.info("deviceDataPoints: "+JSON.stringify(deviceDataPoints));
         publish("responseChannel", {"id": lineChartId, "result": deviceDataPoints});
     }
 }
