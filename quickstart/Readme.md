@@ -46,7 +46,7 @@ This app assumes the user mobile phone as his device.
   - message tag field with {linechart_speed_&lt;value of device id you got on your mobile&gt;"}
   - save your new line chart config for speed over time charting.
 ------------
-  - In your Scriptr workspace, go To The quickstart/api/aubscriber, And click on subscribe button on the top right corner to Subscribe it To The Requestchannel.
+  - From the workspace, select the quickstart/api/subscriber file, then click on the Subscribe button on the top right corner to subscribe it to the requestChannel.
 
 ## How it works
     ### Simulator
