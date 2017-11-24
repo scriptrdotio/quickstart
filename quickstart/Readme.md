@@ -11,7 +11,7 @@ Scriptr.io QuickStartApp to show basic features of the platform
 
 ## Usage
 This app assumes the user mobile phone as his device.
-  - login to your scriptr account.
+  - login to your scriptr.io account.
   - Go to account settings and under sub-domain tab, create your sub-domain.
   - Go to settings and under channels tab, create 2 channels "requestChannel", "responseChannel". Check the "Allow anonymous publishing" & the "Allow anonymous subscription".
   - Open the quickstart/simulator/phone.html, find wsClientProvider.setToken(....), put inside it your account anonymous token that can be found in your account settings and save.
