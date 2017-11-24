@@ -73,7 +73,7 @@ This app assumes the user mobile phone as his device.
         //Publish average speed whenever calculated
         publish("responseChannel", {"id": avgSpeedId, "result": parseFloat(deviceAggregates.average) * 1000});
 ```
-- Same thing for speed.
+- The same happens for speed.
 
 Note: The quickstart app has a dependency the UIComponents module checked-out from scriptrdotio/UIComponents public repo & momentjs module
 
