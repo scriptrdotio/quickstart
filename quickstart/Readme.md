@@ -16,7 +16,6 @@ This app assumes the user mobile phone as his device.
   - Go to settings and under channels tab, create 2 channels "requestChannel", "responseChannel". Check the "Allow anonymous publishing" & the "Allow anonymous subscription".
   - Open the quickstart/simulator/phone.html, find wsClientProvider.setToken(....), put inside it your account anonymous token that can be found in your account settings and save.
   - In order to get a deviceId, open the following URL from your mobile phone: https://<YOUR SUB-DOMAIN>.scriptrapps.io/quickstart/simulator/phone.html.
-  - On your laptop open the quickstart/dashboard/index.html file.
   - In your Scriptr workspace go to the quickstart/dashboard/index.html, a dashboard editor will open.
   
 
