@@ -58,7 +58,7 @@ This app assumes the user mobile phone as his device.
    - The api/subscriber, will detect if acceleration data is received and will call the entities/devicemanager to publishAcceleration.
    - The entities/devicemanager will publish the acceleration in the format expected by the accelerometer, and will build its id to be "accelerometer_"+<deviceId>
 ### position
-   - the api/subscripber will call the devicemanager to process location data:
+   - the api/subscriber will call the devicemanager to process location data:
          - Calculate speed (entities/process/speed & lib/geolib)
          - Store latest location entry & speed
          - Calculate average speed (entities/process/speed & lib/aggregates)
