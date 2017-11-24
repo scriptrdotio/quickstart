@@ -5,8 +5,8 @@ Scriptr.io QuickStartApp to show basic features of the platform
 - Data Transformation
 - Data Storage
 - Data Querying
-- Data processing
-- Data transformation
+- Data Processing
+- Data Transformation
 - Data Charting
 
 ## Usage
