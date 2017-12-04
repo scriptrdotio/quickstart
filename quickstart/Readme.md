@@ -74,5 +74,5 @@ This app assumes the user mobile phone as his device.
 ```
 - The same happens for speed.
 
-Note: The quickstart app has a dependency the UIComponents module checked-out from scriptrdotio/UIComponents public repo & momentjs module
+Note: The quickstart app has a dependency the UIComponents module & the momentjs module.
 
