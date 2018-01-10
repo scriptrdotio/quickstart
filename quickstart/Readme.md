@@ -11,7 +11,7 @@ Scriptr.io QuickStartApp to show basic features of the platform
 
 ## Usage
 This app assumes the user mobile phone as his device.
-  - login to your scriptr.io account.
+  - Login to your scriptr.io account.
   - Go to account settings and under sub-domain tab, create your sub-domain.
   - Go to settings and under channels tab, create 2 channels "requestChannel", "responseChannel". Check the "Allow anonymous publishing" & the "Allow anonymous subscription".
   - Open the quickstart/simulator/phone.html, find wsClientProvider.setToken(....), put inside it your account anonymous token that can be found in your account settings and save.
@@ -29,21 +29,21 @@ This app assumes the user mobile phone as his device.
 ------------
 - Click on the settings icon of the Average Speed speedometer widget.
 - Update 
-  -  message tag field with {"speedometer__average_speed_&lt;value of device id you got on your mobile&gt;"}
-  - api params field with {"deviceId": "&lt;value of device id you got on your mobile&gt;"}
+  -  Message tag field with {"speedometer__average_speed_&lt;value of device id you got on your mobile&gt;"}
+  - API params field with {"deviceId": "&lt;value of device id you got on your mobile&gt;"}
 - Save your new average speed speedometer config for the live average speed calculations.
   
 ------------
-- click on the settings icon of the accelerometer widget.
-- update
-  - message tag field with {accelerometer_&lt;value of device id you got on your mobile&gt;"}
-  - save your new accelerometer config for live motion changes.**
+- Click on the settings icon of the accelerometer widget.
+- Update
+  - Message tag field with {accelerometer_&lt;value of device id you got on your mobile&gt;"}
+  - Save your new accelerometer config for live motion changes.**
 
 ------------
 - click on settings icon of the line chart widget.
 - update
-  - message tag field with {linechart_speed_&lt;value of device id you got on your mobile&gt;"}
-  - save your new line chart config for speed over time charting.
+  - Message tag field with {linechart_speed_&lt;value of device id you got on your mobile&gt;"}
+  - Save your new line chart config for speed over time charting.
 ------------
   - From the workspace, select the quickstart/api/subscriber file, then click on the Subscribe button on the top right corner to subscribe it to the requestChannel.
 
@@ -57,12 +57,12 @@ This app assumes the user mobile phone as his device.
    - The api/subscriber, will detect if acceleration data is received and will call the entities/devicemanager to publishAcceleration.
    - The entities/devicemanager will publish the acceleration in the format expected by the accelerometer, and will build its id to be "accelerometer_"+<deviceId>
 ### position
-   - the api/subscriber will call the devicemanager to process location data:
+   - The api/subscriber will call the devicemanager to process location data:
          - Calculate speed (entities/process/speed & lib/geolib)
          - Store latest location entry & speed
          - Calculate average speed (entities/process/speed & lib/aggregates)
-         - & Store last 10 registered speed calculation and latest average speed for the device.
-         - publish location to the map in the dashboard as expected by the map widget format.
+         - Store last 10 registered speed calculation and latest average speed for the device.
+         - Publish location to the map in the dashboard as expected by the map widget format.
 ### speed
 - The average speed speedometer in the dashboard/index.html file will get the data of the average speed on first load from api/getLiveAverageSpeed.
 - The devicemanager will publish the average speed whenever it is calculated:
